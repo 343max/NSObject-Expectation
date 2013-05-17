@@ -6,10 +6,17 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		504A4CC817461CB500CF9666 /* NSObject+Expectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expectation.h"; sourceTree = "<group>"; };
+		504A4CC917461CB500CF9666 /* NSObject+Expecation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Expecation.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		504A4CC117461C8B00CF9666 = {
 			isa = PBXGroup;
 			children = (
+				504A4CC817461CB500CF9666 /* NSObject+Expectation.h */,
+				504A4CC917461CB500CF9666 /* NSObject+Expecation.m */,
 			);
 			sourceTree = "<group>";
 		};
