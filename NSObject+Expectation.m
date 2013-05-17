@@ -1,9 +1,8 @@
 //
 //  NSObject+SafeObject.m
-//  Trivago
 //
 //  Created by Max Winde on 15.05.13.
-//  Copyright (c) 2013 nxtbgthng GmbH. All rights reserved.
+//  Copyright (c) 2013 Max Winde. All rights reserved.
 //
 
 #import "NSObject+Expectation.h"
