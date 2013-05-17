@@ -8,7 +8,7 @@
 
 /* Begin PBXFileReference section */
 		504A4CC817461CB500CF9666 /* NSObject+Expectation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expectation.h"; sourceTree = "<group>"; };
-		504A4CC917461CB500CF9666 /* NSObject+Expecation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Expecation.m"; sourceTree = "<group>"; };
+		504A4CC917461CB500CF9666 /* NSObject+Expectation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Expectation.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -16,7 +16,7 @@
 			isa = PBXGroup;
 			children = (
 				504A4CC817461CB500CF9666 /* NSObject+Expectation.h */,
-				504A4CC917461CB500CF9666 /* NSObject+Expecation.m */,
+				504A4CC917461CB500CF9666 /* NSObject+Expectation.m */,
 			);
 			sourceTree = "<group>";
 		};
