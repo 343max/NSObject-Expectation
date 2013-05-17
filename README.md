@@ -1,5 +1,7 @@
 # NSObject+Expectation
 
+### Simple object verification that does not clutter your code.
+
 We've all been there: you get some `NSDictionary` from some JSON deserialization, you expect it to be an `NSString`:
 
 ```
