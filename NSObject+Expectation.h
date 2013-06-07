@@ -9,8 +9,8 @@
 
 @interface NSObject (Expectation)
 
-- (id)ifIsKindOfClass:(Class)aClass;
-- (id)ifRespondsToSelector:(SEL)selector;
-- (id)ifConformsToProtocol:(Protocol *)aProtocol;
+- (id)nilUnlessKindOfClass:(Class)aClass;
+- (id)nilUnlessRespondsToSelector:(SEL)selector;
+- (id)nilUnlessConformsToProtocol:(Protocol *)aProtocol;
 
 @end

@@ -9,17 +9,17 @@
 
 @implementation NSObject (Expectation)
 
-- (id)ifIsKindOfClass:(Class)aClass;
+- (id)nilUnlessKindOfClass:(Class)aClass;
 {
     return ([self isKindOfClass:aClass] ? self : nil);
 }
 
-- (id)ifRespondsToSelector:(SEL)selector;
+- (id)nilUnlessRespondsToSelector:(SEL)selector;
 {
     return ([self respondsToSelector:selector] ? self : nil);
 }
 
-- (id)ifConformsToProtocol:(Protocol *)aProtocol;
+- (id)nilUnlessConformsToProtocol:(Protocol *)aProtocol;
 {
     return ([self conformsToProtocol:aProtocol] ? self : nil);
 }
