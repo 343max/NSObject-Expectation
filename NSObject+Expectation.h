@@ -17,4 +17,8 @@
 - (id)unless:(NSObject *)object respondsToSelector:(SEL)selector;
 - (id)unless:(NSObject *)object conformsToProtocol:(Protocol *)aProtocol;
 
+- (id)ifIsKindOfClass:(Class)aClass;
+- (id)IfRespondsToSelector:(SEL)selector;
+- (id)IfConformsToProtocol:(Protocol *)aProtocol;
+
 @end

@@ -25,6 +25,8 @@
 }
 
 
+#pragma mark - Default Values
+
 - (id)unless:(NSObject *)object isKindOfClass:(Class)aClass;
 {
     return ([object nilUnlessKindOfClass:aClass] ? object : self);
@@ -38,6 +40,24 @@
 - (id)unless:(NSObject *)object conformsToProtocol:(Protocol *)aProtocol;
 {
     return ([object nilUnlessConformsToProtocol:aProtocol] ? object : self);
+}
+
+
+#pragma mark - Deprecated
+
+- (id)ifIsKindOfClass:(Class)aClass;
+{
+    return [self nilUnlessKindOfClass:aClass];
+}
+
+- (id)IfRespondsToSelector:(SEL)selector;
+{
+    return [self nilUnlessRespondsToSelector:selector];
+}
+
+- (id)IfConformsToProtocol:(Protocol *)aProtocol;
+{
+    return [self nilUnlessConformsToProtocol:aProtocol];
 }
 
 @end
