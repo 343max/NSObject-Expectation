@@ -49,4 +49,16 @@ Finally there is one last method so you are completely covered:
 id<MyFancyProtocol> aObject = [dictionary[@"fancyObject"] nilUnlessConformsToProtocol:@protocol(MyFancyProtocol)];
 ```
 
+### Default values
+
+If you need a default value instead of nil we have something for you to:
+
+```
+NSInteger theAnswer =  [[@(42) unless:alternativeAnswer respondsToSelector:@selector(integerValue)] integerValue];
+```
+
+When alternativeAnswer responds to the integerValue selector it will return alternativeAnswer otherwise @(42).
+
+Ther methods `unless:isKindOfClass:` and `unless:conformsToProtocol` are available to.
+
 License: BSD
