@@ -20,10 +20,10 @@ if (![middleName isKindOfClass:[NSString class]) {
 Lots of ugly code for a simple stupid check. Meet NSObject+Expectation:
 
 ```
-NSString *middleName = [dictionaryFromJSON[@"middle_name"] ifIsKindOfClass:[NSString class]];
+NSString *middleName = [dictionaryFromJSON[@"middle_name"] nilUnlessIsKindOfClass:[NSString class]];
 ```
 
-`[object ifIsKindOfClass:aClass]` returns `object` if it is indeed an object of `aClass`. Otherwise it returns `nil`.
+`[object nilUnlessIsKindOfClass:aClass]` returns `object` if it is indeed an object of `aClass`. Otherwise it returns `nil`.
 
 But there is even a little bit more. Take this example:
 
@@ -40,13 +40,13 @@ NSInteger someIntegerValue = [[dictionary[@"someIntegerValue"] ifIsKindOfClass:[
 But actually we don't care if our object is an `NSNumber`. We are fine, as long a the object won't crash if we call `integerValue` on it. There is an selector for that:
 
 ```
-NSInteger someIntegerValue = [[dictionary[@"someIntegerValue"] ifRespondsToSelector:@selector(integerValue)] integerValue];
+NSInteger someIntegerValue = [[dictionary[@"someIntegerValue"] nilUnlessRespondsToSelector:@selector(integerValue)] integerValue];
 ```
 
 Finally there is one last method so you are completely covered:
 
 ```
-id<MyFancyProtocol> aObject = [dictionary[@"fancyObject"] ifConformsToProtocol:@protocol(MyFancyProtocol)];
+id<MyFancyProtocol> aObject = [dictionary[@"fancyObject"] nilUnlessConformsToProtocol:@protocol(MyFancyProtocol)];
 ```
 
 License: BSD
