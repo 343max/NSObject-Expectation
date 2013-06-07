@@ -24,4 +24,20 @@
     return ([self conformsToProtocol:aProtocol] ? self : nil);
 }
 
+
+- (id)unless:(NSObject *)object isKindOfClass:(Class)aClass;
+{
+    return ([object nilUnlessKindOfClass:aClass] ? object : self);
+}
+
+- (id)unless:(NSObject *)object respondsToSelector:(SEL)selector;
+{
+    return ([object nilUnlessRespondsToSelector:selector] ? object : self);
+}
+
+- (id)unless:(NSObject *)object conformsToProtocol:(Protocol *)aProtocol;
+{
+    return ([object nilUnlessConformsToProtocol:aProtocol] ? object : self);
+}
+
 @end
