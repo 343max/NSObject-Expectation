@@ -49,6 +49,23 @@ Finally there is one last method so you are completely covered:
 id<MyFancyProtocol> aObject = [dictionary[@"fancyObject"] nilUnlessConformsToProtocol:@protocol(MyFancyProtocol)];
 ```
 
+### optional Methods in Protocols
+
+The `nilUnlessRespondsToSelector:` can become handy when calling optional methods of a protocol. How often did you write code like this:
+
+```
+if ([self.delegate respondsToSelector:@selector(shouldAbortDownloading)]) {
+	return [self.delegate shouldAbortDownloading];
+} else {
+	return NO;
+}
+```
+
+This might become a one-liner like this:
+```
+return [[self.delegate nilUnlessRespondsToSelector:@selector(shouldAbortDownloading)] shouldAbortDownloading];
+```
+
 ### Default values
 
 If you need a default value instead of nil we have something for you to:
