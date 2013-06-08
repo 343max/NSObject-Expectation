@@ -29,6 +29,7 @@
 		504A51801761FBF800598D13 /* libNSObject+Expectation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libNSObject+Expectation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		504A51831761FBF800598D13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		504A51871761FBF800598D13 /* NSObject+Expectation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expectation-Prefix.pch"; sourceTree = "<group>"; };
+		504A519017620C0500598D13 /* NSObject+Expectation.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "NSObject+Expectation.podspec"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		504A51861761FBF800598D13 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				504A519017620C0500598D13 /* NSObject+Expectation.podspec */,
 				504A51871761FBF800598D13 /* NSObject+Expectation-Prefix.pch */,
 			);
 			name = "Supporting Files";
